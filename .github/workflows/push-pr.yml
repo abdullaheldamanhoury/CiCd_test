@@ -5,13 +5,13 @@ on:
             - "release/**"
         paths:
             - "src/**"
-    pull_requests:
+    pull_request:
         branches:
             - main
             - "release/**"
 jobs:
     test:
-        runs_on: ubuntu-latest
+        runs-on: ubuntu-latest
         steps:
         - name: Checkout code
           uses: actions/checkout@v6.0.2
